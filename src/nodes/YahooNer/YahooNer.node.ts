@@ -16,7 +16,7 @@ interface NerResponse {
   id: string;
   jsonrpc: string;
   result: {
-    entities: NerEntity[];
+    entityList: NerEntity[];
   };
 }
 
@@ -162,7 +162,7 @@ export class YahooNer implements INodeType {
         });
 
         const nerResponse = response as NerResponse;
-        let entities = nerResponse.result?.entities || [];
+        let entities = nerResponse.result?.entityList || [];
 
         // Filter by entity types if specified
         if (entityTypes.length > 0) {
