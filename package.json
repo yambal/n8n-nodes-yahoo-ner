@@ -1,0 +1,43 @@
+{
+  "name": "n8n-nodes-yahoo-ner",
+  "version": "0.1.0",
+  "description": "n8n node for Yahoo! Japan Named Entity Recognition (NER) API",
+  "keywords": [
+    "n8n-community-node-package",
+    "yahoo",
+    "ner",
+    "named-entity-recognition",
+    "japanese",
+    "nlp"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/yambal/n8n-nodes-yahoo-ner",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yambal/n8n-nodes-yahoo-ner.git"
+  },
+  "main": "dist/nodes/YahooNer/YahooNer.node.js",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "nodes": [
+      "dist/nodes/YahooNer/YahooNer.node.js"
+    ],
+    "credentials": [
+      "dist/credentials/YahooApi.credentials.js"
+    ]
+  },
+  "devDependencies": {
+    "n8n-workflow": "^1.0.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
