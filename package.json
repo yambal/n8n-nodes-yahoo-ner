@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-yahoo-ner",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "n8n node for Yahoo! Japan Named Entity Recognition (NER) API",
   "keywords": [
     "n8n-community-node-package",
